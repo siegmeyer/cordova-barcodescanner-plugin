@@ -3,11 +3,6 @@ BarcodeScanner
 
 **DISCONTINUED**
 
-> If anybody wants to takeover the project feel free to contact me
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/hypery2k/cordova-barcodescanner-plugin.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/hypery2k/cordova-barcodescanner-plugin.svg?branch=master)](https://travis-ci.org/hypery2k/cordova-barcodescanner-plugin) [![Build status](https://ci.appveyor.com/api/projects/status/298mrueury1ntrf4?svg=true)](https://ci.appveyor.com/project/hypery2k/cordova-barcodescanner-plugin)
- [![Bountysource](https://www.bountysource.com/badge/tracker?tracker_id=12908089)](https://www.bountysource.com/trackers/12908089-hypery2k-cordova-barcodescanner-plugin?utm_source=12908089&utm_medium=shield&utm_campaign=TRACKER_BADGE)
-
 > cross-platform barcode scanner for cordova
 
 
@@ -39,12 +34,7 @@ Plugin is still **WIP**
 ## Installation
 
 ```
-cordova plugin add cordova-plugin-barcodescanner
-```
-Or if you want to use the development version (nightly build), which maybe not stable!:
-
-```
-cordova plugin add cordova-plugin-barcodescanner@next
+cordova plugin add cordova-plugin-barcodescanner-de
 ```
 
 On Android you have to the following entry to config.xml
