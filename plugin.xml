@@ -80,13 +80,13 @@ SOFTWARE.
                     <category android:name="android.intent.category.DEFAULT"/>
                 </intent-filter>
             </activity>
-            <activity android:name="com.google.zxing.client.android.encode.EncodeActivity" android:label="@string/share_name">
+            <activity android:name="com.google.zxing.client.android.encode.EncodeActivity" android:label="@string/share_name" android:exported="false">
                 <intent-filter>
                     <action android:name="com.phonegap.plugins.barcodescanner.ENCODE"/>
                     <category android:name="android.intent.category.DEFAULT"/>
                 </intent-filter>
             </activity>
-            <activity android:name="com.google.zxing.client.android.HelpActivity" android:label="@string/share_name">
+            <activity android:name="com.google.zxing.client.android.HelpActivity" android:label="@string/share_name" android:exported="false">
                 <intent-filter>
                     <action android:name="android.intent.action.VIEW"/>
                     <category android:name="android.intent.category.DEFAULT"/>
@@ -134,7 +134,7 @@ SOFTWARE.
         <source-file src="src/android/LibraryProject/res/menu/history.xml" target-dir="res/menu"/>
         <source-file src="src/android/LibraryProject/res/raw/beep.ogg" target-dir="res/raw"/>
         <source-file src="src/android/LibraryProject/res/values/arrays.xml" target-dir="res/values"/>
-        <source-file src="src/android/LibraryProject/res/values/colors.xml" target-dir="res/values"/>
+        <!-- <source-file src="src/android/LibraryProject/res/values/colors.xml" target-dir="res/values"/> -->
         <source-file src="src/android/LibraryProject/res/values/dimens.xml" target-dir="res/values"/>
         <source-file src="src/android/LibraryProject/res/values/ids.xml" target-dir="res/values"/>
         <source-file src="src/android/LibraryProject/res/values-ar/strings.xml" target-dir="res/values-ar"/>
