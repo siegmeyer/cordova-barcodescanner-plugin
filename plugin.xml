@@ -134,7 +134,6 @@ SOFTWARE.
         <source-file src="src/android/LibraryProject/res/menu/history.xml" target-dir="res/menu"/>
         <source-file src="src/android/LibraryProject/res/raw/beep.ogg" target-dir="res/raw"/>
         <source-file src="src/android/LibraryProject/res/values/arrays.xml" target-dir="res/values"/>
-        <!-- <source-file src="src/android/LibraryProject/res/values/colors.xml" target-dir="res/values"/> -->
         <source-file src="src/android/LibraryProject/res/values/dimens.xml" target-dir="res/values"/>
         <source-file src="src/android/LibraryProject/res/values/ids.xml" target-dir="res/values"/>
         <source-file src="src/android/LibraryProject/res/values-ar/strings.xml" target-dir="res/values-ar"/>
@@ -167,6 +166,20 @@ SOFTWARE.
         <source-file src="src/android/LibraryProject/res/values-zh-rCN/strings.xml" target-dir="res/values-zh-rCN"/>
         <source-file src="src/android/LibraryProject/res/values-zh-rTW/strings.xml" target-dir="res/values-zh-rTW"/>
         <source-file src="src/android/LibraryProject/res/xml/preferences.xml" target-dir="res/xml"/>
+
+        <config-file target="res/values/colors.xml" parent="/resources">
+          <color name="contents_text">#ff000000</color>
+          <color name="encode_view">#ffffffff</color>
+          <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+          <color name="result_minor_text">#ffc0c0c0</color>
+          <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+          <color name="result_text">#ffffffff</color>
+          <color name="result_view">#b0000000</color>
+          <color name="status_text">#ffffffff</color>
+          <color name="transparent">#00000000</color>
+          <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+          <color name="viewfinder_mask">#60000000</color>
+        </config-file>
 
         <!-- plugman cannot merge - prepare manual merge -->
         <config-file target="res/values/strings.xml" parent="/resources">
