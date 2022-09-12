@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-barcodescanner",
+  "name": "cordova-plugin-barcodescanner-de",
   "version": "0.7.4",
-  "description": "Cordova Barcode Scanner Plugin",
+  "description": "Cordova Barcode Scanner Plugin DE",
   "cordova": {
-    "id": "cordova-plugin-barcodescanner",
+    "id": "cordova-plugin-barcodescanner-de",
     "platforms": [
       "android",
       "ios",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hypery2k/cordova-barcodescanner-plugin.git"
+    "url": "https://github.com/siegmeyer/cordova-barcodescanner-plugin-de.git"
   },
   "keywords": [
     "cordova",
