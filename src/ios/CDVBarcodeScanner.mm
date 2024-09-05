@@ -131,13 +131,18 @@
     
     callback = command.callbackId;
     
-    // We allow the user to define an alternate xib file for loading the overlay.
-    NSString *overlayXib = nil;
-    if ( [command.arguments count] >= 1 )
-    {
-        overlayXib = [command.arguments objectAtIndex:0];
+    NSDictionary* options;
+    if (command.arguments.count == 0) {
+      options = [NSDictionary dictionary];
+    } else {
+      options = command.arguments[0];
     }
-    
+
+    BOOL preferFrontCamera = [options[@"preferFrontCamera"] boolValue];
+
+    // We allow the user to define an alternate xib file for loading the overlay.
+    NSString *overlayXib = options[@"overlayXib"];
+
     capabilityError = [self isScanNotPossible];
     if (capabilityError) {
         [self returnError:capabilityError callback:callback];
@@ -150,6 +155,11 @@
                  parentViewController:self.viewController
                  alterateOverlayXib:overlayXib
                  ];
+
+    if (preferFrontCamera) {
+        processor.isFrontCamera = true;
+    }
+
     [processor retain];
     [processor retain];
     [processor retain];
